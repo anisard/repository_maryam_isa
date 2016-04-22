@@ -5,7 +5,8 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
-  font-family: sans-serif;
+  font-family:sans-serif;
+    
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
@@ -1144,6 +1145,13 @@ img {
 .img-circle {
   border-radius: 50%;
 }
+/*tambahan untuk centered image*/
+.displayed{
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+
 hr {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -4018,6 +4026,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li > a > img {
   max-width: none;
 }
+
 .nav-tabs {
   border-bottom: 1px solid #ddd;
 }
@@ -4277,10 +4286,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-brand {
   float: left;
   height: 50px;
-  padding: 0;
+  padding: 15px 15px;
   font-size: 18px;
   line-height: 20px;
-  margin: 0 100px 0 0;
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
@@ -4497,7 +4505,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: #f8f8f8;
+  background-color: olivedrab; /*#f8f8f8*/
   border-color: #e7e7e7;
 }
 .navbar-default .navbar-brand {
@@ -6759,3 +6767,13 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+.logofb {
+    margin-top: -60px;
+}
+.footer-text{
+    color: white;
+    padding-top: 10px;
+}
+.text-title{
+    text-align: center;
+}
