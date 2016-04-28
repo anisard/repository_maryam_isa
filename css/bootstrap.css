@@ -1416,7 +1416,7 @@ a.bg-danger:hover,
 a.bg-danger:focus {
   background-color: #e4b9b9;
 }
-.page-header {
+.page-header {  
   padding-bottom: 9px;
   margin: 40px 0 20px;
   border-bottom: 1px solid #eee;
@@ -2558,7 +2558,7 @@ output {
 }
 .form-control {
   display: block;
-  width: 100%;
+  width: 80%; /*before 100%*/
   height: 34px;
   padding: 6px 12px;
   font-size: 14px;
@@ -4286,7 +4286,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-brand {
   float: left;
   height: 50px;
-  padding: 15px 15px;
+  padding: 5px 15px;
   font-size: 18px;
   line-height: 20px;
 }
@@ -6776,4 +6776,43 @@ button.close {
 }
 .text-title{
     text-align: center;
+    font-family:inherit;
+    font-size: 6em;
+}
+
+.footer-image{
+    width: 100%;
+    height: auto;
+    background-image: url(../image/footer-kids.png)
+}
+.galeri{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    
+}
+.menu2{
+    background-color: #efefef;
+    width: 100%;
+}
+.quote{
+    margin-left: auto;
+    margin-right: auto;
+}
+.col3{
+    width: 913px;
+    height: 500px;
+    padding: 10px;
+    border-radius: 0%;
+    margin: 200px 50px 0 14px;
+    background-color: #D6EAF8;
+}
+.col4{
+    width: 913px;
+    height: 500px;
+    padding: 10px;
+    border-radius: 0%;
+    margin: 50px 50px 0 14px;
+    background-color: #F8C471;
 }
