@@ -1158,6 +1158,14 @@ hr {
   border: 0;
   border-top: 1px solid #eee;
 }
+    
+.hr2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 3px solid #eee;
+  width: 70%;
+}
 .sr-only {
   position: absolute;
   width: 1px;
@@ -1595,6 +1603,7 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  
 }
 @media (min-width: 768px) {
   .container {
@@ -4505,8 +4514,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: olivedrab; /*#f8f8f8*/
-  border-color: #e7e7e7;
+  background-color: olivedrab; /*#f8f8f8
+  border-color: #e7e7e7;*/
 }
 .navbar-default .navbar-brand {
   color: #777;
@@ -5817,7 +5826,7 @@ button.list-group-item-danger.active:focus {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 0;
+  left: 10px;
   width: 100%;
   height: 100%;
   border: 0;
@@ -6250,6 +6259,7 @@ button.close {
   position: relative;
 }
 .carousel-inner {
+  margin-top: 50px; /*sebelumnya td ada*/
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -6328,7 +6338,7 @@ button.close {
 }
 .carousel-control {
   position: absolute;
-  top: 0;
+  top: 100px;
   bottom: 0;
   left: 0;
   width: 15%;
@@ -6341,20 +6351,20 @@ button.close {
   opacity: .5;
 }
 .carousel-control.left {
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
+  /*background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
   background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .0001)));
-  background-image:         linear-gradient(to right, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
+  background-image:         linear-gradient(to right, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);*/
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
   background-repeat: repeat-x;
 }
 .carousel-control.right {
   right: 0;
   left: auto;
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
+  /*background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
   background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .5)));
-  background-image:         linear-gradient(to right, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
+  background-image:         linear-gradient(to right, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);*/
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
   background-repeat: repeat-x;
 }
@@ -6426,7 +6436,7 @@ button.close {
   width: 12px;
   height: 12px;
   margin: 0;
-  background-color: #fff;
+  background-color: red/*#fff*/;
 }
 .carousel-caption {
   position: absolute;
@@ -6767,23 +6777,30 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
-.logofb {
-    margin-top: -60px;
-}
-.footer-text{
+
+#footer1{
+    text-align: left;
     color: white;
-    padding-top: 10px;
+    clear: both;
+    padding: 3% 0% 3% 2%;
+    background-color:#2E86C1;
+}
+
+#logo {
+    float: right;
+    padding: -20% 5% 0% 5%;
+    margin: -3% 2%;
 }
 .text-title{
     text-align: center;
-    font-family:inherit;
-    font-size: 6em;
+    font-family: 'Patrick Hand', cursive;
 }
 
 .footer-image{
     width: 100%;
-    height: auto;
-    background-image: url(../image/footer-kids.png)
+    height: 100px;
+    background-color:yellowgreen;
+    /*background-image: url(../image/footer-kids.png)*/
 }
 .galeri{
     width: 80%;
@@ -6800,19 +6817,106 @@ button.close {
     margin-left: auto;
     margin-right: auto;
 }
-.col3{
-    width: 913px;
-    height: 500px;
-    padding: 10px;
-    border-radius: 0%;
-    margin: 200px 50px 0 14px;
-    background-color: #D6EAF8;
+.img-program{
+    border-radius: 4%;
+    border-style: solid;
+    margin-bottom: 10px;
 }
-.col4{
-    width: 913px;
-    height: 500px;
-    padding: 10px;
-    border-radius: 0%;
-    margin: 50px 50px 0 14px;
-    background-color: #F8C471;
+
+hr.style15 {
+	border-top: 4px double #F39C12;
+	text-align: center;
 }
+hr.style15:after {
+	content: '\002665';
+	display: inline-block;
+	position: relative;
+	top: -15px;
+	padding: 0 10px;
+	background: white;
+	color: #F39C12;
+	font-size: 18px;
+}
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  position: absolute;
+  overflow: hidden;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 10%;
+  border-bottom: 1px solid #FFF;
+  border-top: 1px solid #FFF;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0,1);
+  -ms-transform: scale(0,1);
+  transform: scale(0,1);
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.hovereffect:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+  filter: brightness(0.6);
+  -webkit-filter: brightness(0.6);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  background-color: transparent;
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,-100%,0);
+  transform: translate3d(0,-100%,0);
+}
+
+.hovereffect a, hovereffect p {
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,100%,0);
+  transform: translate3d(0,100%,0);
+}
+
+.hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.firstcol {
+    border-right: 1px solid #000;
