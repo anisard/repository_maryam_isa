@@ -5,12 +5,84 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Maryam &amp; Isa Daycare</title>
+       <script src="js/jquery-1.12.3.min.js"></script>
         <link rel="stylesheet" href="css/bootstrap.css">
-       
-        <script src="js/jquery-1.12.3.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <link href='https://fonts.googleapis.com/css?family=Patrick+Hand' rel='stylesheet' type='text/css'>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        
+       <script type="text/javascript" src="js/jquery.fancybox.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="screen" />
+
+	<!-- Add Button helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox-buttons.css" />
+	<script type="text/javascript" src="js/jquery.fancybox-buttons.js"></script>
+        
+    <!--masalah dimulai-->    
+    <script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			 *  Simple image gallery. Uses default settings
+			 */
+
+			$('.fancybox').fancybox();
+
+			/*
+			 *  Different effects
+			 */
+
+			
+
+			// Set custom style, close if clicked, change title type and overlay color
+			$(".fancybox-effects-c").fancybox({
+				wrapCSS    : 'fancybox-custom',
+				closeClick : true,
+
+				openEffect : 'none',
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					overlay : {
+						css : {
+							'background' : 'rgba(238,238,238,0.85)'
+						}
+					}
+				}
+			});
+
+			/*
+			 *  Open manually
+			 */
+			$("#fancybox-manual-c").click(function() {
+				$.fancybox.open([
+					{
+						href : '1_b.jpg',
+						title : 'My title'
+					}, {
+						href : '2_b.jpg',
+						title : '2nd title'
+					}, {
+						href : '3_b.jpg'
+					}
+				], {
+					helpers : {
+						thumbs : {
+							width: 75,
+							height: 50
+						}
+					}
+				});
+			});
+
+
+		});
+	</script>
+    
+<!--masalah selesai-->
+  
   <link href='https://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+        
   <style>
   .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
@@ -18,6 +90,8 @@
       margin: auto;
   }
   </style>
+    
+        
     </head>
     <body>
         
@@ -32,13 +106,13 @@
                 <span class="icon-bar"></span>            <span class="icon-bar"></span>
                     </button>
         
-      <a class="navbar-brand" href="#"> <img src="image/logo4.png" width="300px"/></a>
+      <a class="navbar-brand" href="#"> <img src="images/logo4.png" width="300px"/></a>
     </div>
         <div id="navbar" class="navbar-collapse collapse">
     <ul class="nav navbar-nav">
       <li class="active"><a href="index.html">Beranda</a></li>
       <li><a href="#kelas">Kelas</a></li>
-      <li><a href="#program">Program</a></li>
+      <li><a href="#program">Kurikulum</a></li>
       <li><a href="#galeri">Galeri</a></li>
       <li><a href="#pengurus">Tentang Kami</a></li>
     </ul>
@@ -60,26 +134,26 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="image/slider1.png">
+      <img src="images/slider1.png">
       <div class="carousel-caption">
        
       </div> 
     </div>
     <div class="item">
-      <img src="image/slider2.jpg" width="100%" alt="...">
+      <img src="images/slider2.jpg" width="100%" alt="...">
       <div class="carousel-caption">
         
       </div>
     </div>
      <div class="item">
-      <img src="image/slide5.jpg" alt="...">
+      <img src="images/slide5.jpg" alt="...">
       <div class="carousel-caption">
        
       </div>
     </div>
       
        <div class="item">
-      <img src="image/slider3.jpg" alt="...">
+      <img src="images/slider3.jpg" alt="...">
       <div class="carousel-caption">
       
       </div>
@@ -105,7 +179,7 @@
 KELAS MARYAM &amp; ISA</h2>
 <h4 class="text-center text-info quote" style="width:50%">"Maryam &amp; Isa mengakomodasi kebutuhan anak-anak untuk bermain sesuai usia mereka. Anak-anak seperti spons yang mudah menyerap. Hingga 5 tahun adalah usia keemasan anak yang perlu perhatian dengan seksama..."
         </h4>
-<hr class="alert-info">
+<hr class="alert-title">
 <div class="container">
     <div class="col-md-6">
     <div class="col-md-12" style="background-color:white;">
@@ -113,19 +187,22 @@ KELAS MARYAM &amp; ISA</h2>
     <h4 class="text-success"><strong>&#40;12 bulan - 2,5 tahun&#41;</strong></h4>
         <div class="text-justify">
         <p>Kelas kecil diperuntukkan bagi ananda berusia hingga 2,5 tahun. Ruangan dengan luas sekitar 30 meter persegi, beralas karpet karet yang nyaman untuk aktifitas sang buah hati.</p>
-        <p>Ruangan ini juga dipenuhi dengan permainan yang melatih fokus dan motorik halus ananda, seperti soft book, perosotan kecil, puzzle, dan lain sebagainya.</p>
+        <p>Ruangan ini juga dipenuhi dengan permainan yang melatih fokus dan motorik halus ananda, seperti soft book, building block, dan puzzle. </p>
+        <p>Selain melatih motorik halus, Ananda juga dapat melatih motorik kasar melalui perosotan kayu, dan melatih sosialisasinya saat bermain bersama teman-teman.</p>
         </div>
     </div>
     </div>
     <div class="col-md-6">
     <div class="col-md-12" style="background-color:none; height:auto">
-    <img class="pull-right img-responsive" src="image/Sunda_playing_cylinderblock.jpg" width="400px"/a>
+    <img class="pull-right img-responsive" src="images/Sunda_playing_cylinderblock.jpg" width="400px"/a>
     </div>
     </div>
-    
+    </div>
+<hr style="alert-info">
+    <div class="container">
       <div class="col-md-6">
     <div class="col-md-12" style="background-color:white; height:auto">
-        <img class="pull-left" src="image/abang_ei.png" width="400px"/a>
+        <img class="pull-left" src="images/ataya_main.png" width="300px"/a>
 
     </div>
     </div>
@@ -135,8 +212,9 @@ KELAS MARYAM &amp; ISA</h2>
         <h3><strong>Kelas Besar</strong></h3>
     <h4 class="text-success"><strong>&#40;2,5 - 6 tahun&#41;</strong></h4>
         <div class="text-justify">
-        <p>Kelas kecil diperuntukkan bagi ananda berusia hingga 2,5 tahun. Ruangan dengan luas sekitar 30 meter persegi, beralas karpet karet yang nyaman untuk aktifitas sang buah hati.</p>
-        <p>Ruangan ini juga dipenuhi dengan permainan yang melatih fokus dan motorik halus ananda, seperti soft book, perosotan kecil, puzzle, dan lain sebagainya.</p>
+        <p>Kelas kecil diperuntukkan bagi ananda berusia hingga 2,5 tahun. Ruangan dengan luas sekitar 50 meter persegi, menunjang kebutuhan Ananda akan ruang gerak yang leluasa.</p>
+        <p>Ruangan ini juga diisi dengan permainan yang juga melatih konsentrasi seperti silinder block, balok kayu, dan beberapa permainan eksperimental sederhana.</p>
+            <p>Di ruangan ini juga Ananda melakukan aktifitas makan bersama, sholat berjamaah, dan melatih kedisiplinan melalui antri menggunakan washtafel saat selesai makan.</p>
         </div>
         
     </div>
@@ -146,18 +224,19 @@ KELAS MARYAM &amp; ISA</h2>
 </section>    
 <!--end of classes-->
     
-<!--Program MI begin-->
+<!--Kurikulum begin-->
 <section id="program">
 <div class="container"><br><br><br>
         <h2 class="text-title">
-PROGRAM MARYAM &amp; ISA</h2>
-<hr class="alert-info">
+KURIKULUM</h2>
+<hr class="alert-title">
     <div class="col-sm-3" style="background-color:#F8F9F9">
-        <h3>Life Skills</h3>
-        <img class="img-program" src="image/gambar5.jpg" width="200px"/>
         
-        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Lebih lanjut..</button>
-        
+        <h3 class="text-center">Life Skills</h3>
+        <img class="displayed" src="images/1462515564_Tic-Tac-Toe-Game.png" width="100px"/>
+        <br>
+        <button style="margin-left:29%" type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal">Lebih lanjut..</button>
+      
 <!-- Modal -->
 <div id="myModal" class="modal fade" role="dialog">
   <div class="modal-body">
@@ -166,10 +245,14 @@ PROGRAM MARYAM &amp; ISA</h2>
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Modal Header</h4>
+        <h4 class="modal-title">Life Skill</h4>
       </div>
       <div class="modal-body">
-        <p>Some text in the modal.</p>
+          <img class="img-program displayed" src="images/gambar5.jpg" width="500px"/>
+        <p>Di Maryam Isa, kegatan belajar dilakukan melalui berbagai kegiatan menyenangkan yang dekat dengan kebiasaan sehari-hari. Saat ingin menggunakan keran air setelah makan, Ananda belajar untuk antre dengan tertib. Ananda juga dibimbing untuk meletakaan peralatan makan kotor di tempat semestinya.</p>
+          <p>Jika musim kemarau tiba, Ananda akan sangat bersuka hati membantu menyiram tanaman-tanaman yang ada di halaman Maryam Isa.</p>
+          <p>Tak jarang, Ananda belajar berempati terhadap mahluk hidup lain melalui acara memberi makan anak-anak kucing liar yang ada di sekitar Maryam Isa. </p>
+          
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -181,10 +264,10 @@ PROGRAM MARYAM &amp; ISA</h2>
         </div>
     
     <div class="col-sm-3" style="background-color:#F8F9F9;">
-        <h3>Story Telling</h3>
-        <img class="img-program" src="image/IMG_0864.JPG" width="200px"/>
-        
-        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">Lebih lanjut..</button>
+        <h3 class="text-center" >Story Telling</h3>
+        <img class="displayed" src="images/1462515076_Scrabble.png" width="100px"/>
+        <br>
+        <button style="margin-left:29%" type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal1">Lebih lanjut..</button>
         
 <!-- Modal -->
 <div id="myModal1" class="modal fade" role="dialog">
@@ -194,10 +277,12 @@ PROGRAM MARYAM &amp; ISA</h2>
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Modal Header</h4>
+        <h4 class="modal-title">Story Telling</h4>
       </div>
       <div class="modal-body">
-        <p>Some text in the modal.</p>
+          <img class="img-program displayed" src="images/IMG_0864.JPG" width="500px"/>
+        <p>Maryam Isa memiliki perpustakaan mini yang berisi koleksi cerita-cerita edukatif. Salah satu kegiatan yang sangat disukai Ananda adalah story telling. Ananda diminta memilih buku kesukaannya, lalu berkumpul dalam bentuk lingkaran sambil mendengarkan Kakak membaca cerita.</p>
+          <p>Maryam Isa sadar betul, salah satu cara efektif memasukan nilai-nilai kehidupan yang positif adalah melalui bacaan. Setidaknya tiga kali dalam seminggu, agenda Story Telling diadakan.</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -209,10 +294,10 @@ PROGRAM MARYAM &amp; ISA</h2>
         </div>
         
     <div class="col-sm-3" style="background-color:#F8F9F9;">
-        <h3>Tematik</h3>
-        <img class="img-program" src="image/gambar8.jpg" width="200px"/>
-        
-        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">Lebih lanjut..</button>
+        <h3 class="text-center">Tematik</h3>
+        <img class="displayed" src="images/1462515590_Board-Games.png" width="100px"/>
+        <br>
+        <button style="margin-left:29%" type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal2">Lebih lanjut..</button>
         
 <!-- Modal -->
 <div id="myModal2" class="modal fade" role="dialog">
@@ -222,10 +307,12 @@ PROGRAM MARYAM &amp; ISA</h2>
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Modal Header</h4>
+        <h4 class="modal-title">Tematik</h4>
       </div>
       <div class="modal-body">
-        <p>Some text in the modal.</p>
+          <img class="img-program displayed" src="images/gambar8.jpg" width="500px"/>
+        <p>Cara belajar tematik merupakan cara belajar yang lebih banyak melibatkan Ananda secara aktif dalam prosesnya. Dengan cara belajar ini, Anda dapat menggali sendiri pengetahuannya dan mendapatkan pengalaman yang lebih menyeluruh. </p>
+          <p>Dengan cara ini, Ananda akan lebih paham konsep-konsep akan materi yang diajarkan, karena bersentuhan langsung dengan bahan yang ada &#40;learning by doing&#41;</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -236,10 +323,10 @@ PROGRAM MARYAM &amp; ISA</h2>
 </div>
         </div>
     <div class="col-sm-3" style="background-color:#F8F9F9;">
-        <h3>Brain Gym 101</h3>
-        <img class="img-program" src="image/galeri9.jpg" width="200px"/>
-        
-        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">Lebih lanjut..</button>
+        <h3 class="text-center">Brain Gym 101</h3>
+        <img class="displayed" src="images/1462515095_Brain-Games.png" width="100px"/>
+        <br>
+        <button style="margin-left:29%" type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal3">Lebih lanjut..</button>
         
 <!-- Modal -->
 <div id="myModal3" class="modal fade" role="dialog">
@@ -249,10 +336,12 @@ PROGRAM MARYAM &amp; ISA</h2>
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Modal Header</h4>
+        <h4 class="modal-title">Brain Gym 101</h4>
       </div>
-      <div class="modal-body">
-        <p>Some text in the modal.</p>
+      <div class="modal-body">   
+          <img class="img-program displayed" src="images/galeri9.jpg" width="500px"/>
+        <p>Brain Gym® merupakan program senam otak untuk kesiapan belajar dari Educational Kinesiology ( Edu-K ), yaitu serangkaian gerakan sederhana yang menunjang kemampuan belajar. Kesiapan fisik belajar dengan mengaktifkan seluruh otak memudahkan tugas belajar dan penyesuaian diri dengan tuntutan sehari-hari di lingkungan tempat kita berada.</p> 
+        <p>Gerakan Brain Gym diyakini dapat mengaktifkan bagian-bagian otak agar bekerja sama sehingga bagian-bagian otak dapat bekerjasama dengan baik dalam menerima dan merespon suatu informasi.</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -270,54 +359,34 @@ PROGRAM MARYAM &amp; ISA</h2>
     <div class="container"><br><br><br>
         <h2 class="text-title">GALERI
         </h2> 
-        <hr class="alert-info">
-        <div class="row galeri">
-    <div class="col-md-4">
-      <a href="image/galeri1.jpg" class="thumbnail">  
-        <img src="image/galeri1.jpg" alt="Pulpit Rock" style="width:200px;height:150px">
-      </a>
-    </div>
-    <div class="col-md-4">
-      <a href="image/galeri2.jpg" class="thumbnail">
-        <img src="image/galeri2.jpg" alt="Moustiers Sainte Marie" style="width:200px;height:150px">
-      </a>
-    </div>
-    <div class="col-md-4">
-      <a href="image/galeri3.jpg" class="thumbnail">    
-        <img src="image/galeri3.jpg" alt="Cinque Terre" style="width:200px;height:150px">
-      </a>
-    </div>
-    <div class="col-md-4">
-      <a href="image/galeri4.jpg" class="thumbnail">  
-        <img src="image/galeri4.jpg" alt="Pulpit Rock" style="width:200px;height:150px">
-      </a>
-    </div>
-    <div class="col-md-4">
-      <a href="image/galeri5.jpg" class="thumbnail">
-        <img src="image/galeri5.jpg" alt="Moustiers Sainte Marie" style="width:200px;height:150px">
-      </a>
-    </div>
-    <div class="col-md-4">
-      <a href="image/galeri6.jpg" class="thumbnail">    
-        <img src="image/galeri6.jpg" alt="Cinque Terre" style="width:200px;height:150px">
-      </a>
-    </div>
-    <div class="col-md-4">
-      <a href="image/galeri7.jpg" class="thumbnail">  
-        <img src="image/galeri7.jpg" alt="Pulpit Rock" style="width:200px;height:150px">
-      </a>
-    </div>
-    <div class="col-md-4">
-      <a href="image/galeri8.jpg" class="thumbnail">
-        <img src="image/galeri8.jpg" alt="Moustiers Sainte Marie" style="width:200px;height:150px">
-      </a>
-    </div>
-    <div class="col-md-4">
-      <a href="image/galeri9a.jpg" class="thumbnail">    
-        <img src="image/galeri9a.jpg" alt="Cinque Terre" style="width:200px;height:150px">
-      </a>
-  </div>
-</div>  
+        <hr class="alert-title">
+        
+        <p class="text-center">
+	
+		<a class="fancybox-effects-c" href="images/galeri1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img class="img-thumbnail" src="images/galeri1.jpg" width="300px" alt="" /></a>
+           
+		<a class="fancybox-effects-c" href="images/galeri2.jpg" data-fancybox-group="gallery" title="Etiam quis mi eu elit temp"><img class="img-thumbnail" src="images/galeri2.jpg" width="300px" alt="" /></a>
+     
+		<a class="fancybox-effects-c" href="images/galeri3.jpg" data-fancybox-group="gallery" title="Cras neque mi, semper leon"><img class="img-thumbnail" src="images/galeri3.jpg" width="300px" alt="" /></a>
+     
+		<a class="fancybox-effects-c" href="images/galeri4.jpg" data-fancybox-group="gallery" title="Sed vel sapien vel sem uno"><img class="img-thumbnail" src="images/galeri4.jpg" width="300px" alt="" /></a>
+        
+        <a class="fancybox-effects-c" href="images/galeri5.jpg" data-fancybox-group="gallery" title="Sed vel sapien vel sem uno"><img class="img-thumbnail" src="images/galeri5.jpg" width="300px" alt="" /></a>
+        
+        <a class="fancybox-effects-c" href="images/galeri6.jpg" data-fancybox-group="gallery" title="Sed vel sapien vel sem uno"><img class="img-thumbnail" src="images/galeri6.jpg" width="300px" alt="" /></a>
+    
+		<a class="fancybox-effects-c" href="images/galeri7.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img class="img-thumbnail" src="images/galeri7.jpg" width="300px" alt="" /></a>
+           
+		<a class="fancybox-effects-c" href="images/galeri8.jpg" data-fancybox-group="gallery" title="Etiam quis mi eu elit temp"><img class="img-thumbnail" src="images/galeri8.jpg" width="300px" alt="" /></a>
+     
+		<a class="fancybox-effects-c" href="images/galeri9.jpg" data-fancybox-group="gallery" title="Cras neque mi, semper leon"><img class="img-thumbnail" src="images/galeri9.jpg" width="300px" alt="" /></a>
+     
+		<a class="fancybox-effects-c" href="images/galeri10.png" data-fancybox-group="gallery" title="Sed vel sapien vel sem uno"><img class="img-thumbnail" src="images/galeri10.png" width="300px" alt="" /></a>
+        
+        <a class="fancybox-effects-c" href="images/galeri11.jpg" data-fancybox-group="gallery" title="Sed vel sapien vel sem uno"><img class="img-thumbnail" src="images/galeri11.jpg" width="300px" alt="" /></a>
+        
+        <a class="fancybox-effects-c" href="images/galeri12.png" data-fancybox-group="gallery" title="Sed vel sapien vel sem uno"><img class="img-thumbnail" src="images/galeri12.png" width="300px" alt="" /></a>
+        </p>
         </div>
         </section>
     
@@ -328,12 +397,12 @@ PROGRAM MARYAM &amp; ISA</h2>
     <h2 class="text-title">
         PROFIL PENGURUS
         </h2>
-        <hr class="alert-info">
+        <hr class="alert-title">
         </div>
     <div class="container" style="margin-left:25%; margin-right:25%;"> 
            <div class="col-md-3">
                <div class="hovereffect">
-                <img src="image/kakzahra.jpg" width="300px" class="img-responsive" alt="Responsive image">
+                <img src="images/kakzahra.png" width="200px" class="img-responsive displayed img-thumbnail" alt="Responsive image">
                 <div class="overlay">
                 <h2>Zahra Zahira</h2>
 				<p> 
@@ -351,10 +420,27 @@ PROGRAM MARYAM &amp; ISA</h2>
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Modal Header</h4>
+        <h4 class="modal-title">Profil Pemilik:</h4>
+          <h1>Zahra Zahira</h1>
       </div>
       <div class="modal-body">
-        <p>Some text in the modal.</p>
+        <p><strong>Pendidikan:</strong></p>
+          <ul>
+          <li>S1 Manajemen, Fakultas Ekonomi, Universitas Airlangga, Surabaya</li>
+        <li>S2 Stratejik Manajemen, Fakultas Ekonomi, Universitas Indonesia, Depok</li>
+          </ul>
+          <p><strong>Training:</strong></p>
+          <ul>
+          <li>Training Brain Gym 101, Yayasan Kinesiologi, 2013</li>
+          <li>Pelatihan Kompetensi Tenaga Pendidik, Pendidikan Inklusif Anak Usia Dini-College Allied Educators, 2015-2016 </li>
+          </ul>
+        <p><strong>Seminar dan Konferensi:</strong></p>
+          <ul>
+          <li>Seminar Montessori dan Anak Berkebutuhan Khusus, Yayasan Bakti Kemenangan, 2013</li>
+              <li>Seminar Pendidikan Inklusif, Yayasan Indonesia Peduli Anak Berkebutuhan Khusus, 2014</li>
+              <li>Seminar Perkembangan Bahasa dan Bicara &#40;Language Delay or Disorder?&#41;, College Allied Educators, Surabaya 2015</li>
+              <li>Enriching Indonesia's Education Through Montessori, Association of Indonesia Montessori School, 2015</li>
+          </ul>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -365,7 +451,7 @@ PROGRAM MARYAM &amp; ISA</h2>
     
 <div class="col-md-3">
     <div class="hovereffect">
-        <img src="image/kakzahra.jpg" width="300px" class="img-responsive" alt="Responsive image">
+        <img src="images/kakdinar.png" width="200px" class="img-responsive displayed img-thumbnail" alt="Responsive image">
             <div class="overlay">
                 <h2>Dinar Ulfi</h2>
 				<p> 
@@ -381,10 +467,24 @@ PROGRAM MARYAM &amp; ISA</h2>
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Modal Header</h4>
+          <h4 class="modal-title">Profil Pengurus:</h4> 
+          <h2>Dinar Ulfi</h2>
       </div>
       <div class="modal-body">
-        <p>Some text in the modal.</p>
+        <p><strong>Pendidikan:</strong></p>
+          <p>S1 Manajemen, Fakultas Ekonomi, Universitas Airlangga, Surabaya</p>
+          <p><strong>Training:</strong></p>
+          <ul>
+          <li>Training Brain Gym 101, Yayasan Kinesiologi, 2013</li>
+          <li>Pelatihan Kompetensi Tenaga Pendidik, Pendidikan Inklusif Anak Usia Dini-College Allied Educators, 2015-2016 </li>
+          </ul>
+        <p><strong>Seminar dan Konferensi:</strong></p>
+          <ul>
+          <li>Seminar Montessori dan Anak Berkebutuhan Khusus, Yayasan Bakti Kemenangan, 2013</li>
+              <li>Seminar Pendidikan Inklusif, Yayasan Indonesia Peduli Anak Berkebutuhan Khusus, 2014</li>
+              <li>Seminar Perkembangan Bahasa dan Bicara &#40;Language Delay or Disorder?&#41;, College Allied Educators, Surabaya 2015</li>
+              <li>Enriching Indonesia's Education Through Montessori, Association of Indonesia Montessori School, 2015</li>
+          </ul>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -406,7 +506,7 @@ PROGRAM MARYAM &amp; ISA</h2>
 
     <div class="container">
         
-    <hr class="alert-info">
+    <hr class="alert-title">
     <form class = "form-horizontal" role = "form">
    
    <div class = "form-group">
@@ -459,19 +559,21 @@ PROGRAM MARYAM &amp; ISA</h2>
 </form>
 </div>   
         </div>
+    <div class="container" style="margin-left:20%; margin-bottom:50px;">
+    <span class="glyphicon glyphicon-link"></span><a href="https://drive.google.com/open?id=0B3BSiPTKh3F8akhMaWFrUFZRMVk">Klik di sini untuk mendapatkan formulir pendaftaran</a></div>
 </section>
         
 <!--Bagian Peta-->
     <section id="peta">
     <div class="container">
         <h2 class="text-title">LOKASI</h2>
-        <hr class="alert-info">
+        <hr class="alert-title">
         </div>
     <div id="container" style="margin-left:80px; margon-right:0px; margin-bottom:100px">
     <div class="row">
         <div class="col-md-6 firstcol">
     <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7930.433628613043!2d106.84853937963865!3d-6.365980845459848!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0xb0c7b3bcd243d969!2sDally+Aquarium!5e0!3m2!1sen!2sid!4v1462124171218" width="500px" frameborder=() border="10px"></iframe>
+        <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.209703818539!2d106.84582421476993!3d-6.366901695392792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x49c5b668acf04b7!2sMaryam+%26+Isa+Daycare!5e0!3m2!1sen!2s!4v1462719168276" width="500px" frameborder=() border="10px"></iframe>
         </div>
       </div>
         <div class="col-md-6">
@@ -501,9 +603,9 @@ PROGRAM MARYAM &amp; ISA</h2>
     </h6>
     
     <div id="logo">
-    <a href="http://facebook.com/MaryamdanIsa"><img class="pull-right logofb" src="image/facebook-icon%20monochrome.png" width="50px" height="50px"/></a>
-    <a href="http://twitter.com/MaryandanIsa"><img class="pull-right logofb" src="image/logo_twitter.png" width="50px" height="50px"/></a>
-    <a href="http://instagram.com/MaryandanIsa"><img class="pull-right logofb" src="image/logo_instagram_transparan.png" width="54px" height="54px"/></a>
+    <a href="http://facebook.com/MaryamdanIsa"><img class="pull-right logofb" src="images/facebook-icon%20monochrome.png" width="50px" height="50px"/></a>
+    <a href="http://twitter.com/MaryandanIsa"><img class="pull-right logofb" src="images/logo_twitter.png" width="50px" height="50px"/></a>
+    <a href="http://instagram.com/MaryandanIsa"><img class="pull-right logofb" src="images/logo_instagram_transparan.png" width="54px" height="54px"/></a>
         </div>
     </div>
   <!--footer end-->

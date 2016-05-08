@@ -5955,6 +5955,7 @@ button.close {
 .modal-header {
   padding: 15px;
   border-bottom: 1px solid #e5e5e5;
+  text-decoration-style: solid;
 }
 .modal-header .close {
   margin-top: -2px;
@@ -5962,10 +5963,18 @@ button.close {
 .modal-title {
   margin: 0;
   line-height: 1.42857143;
+  text-align: center;
+font-family: 'Pacifico', cursive;
+    font-size: 2em;
 }
 .modal-body {
   position: relative;
   padding: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
+  margin-left: 4%;
+    margin-right: 4%;
+    text-align: center;
 }
 .modal-footer {
   padding: 15px;
@@ -6821,6 +6830,8 @@ button.close {
     border-radius: 4%;
     border-style: solid;
     margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 hr.style15 {
@@ -6836,6 +6847,14 @@ hr.style15:after {
 	background: white;
 	color: #F39C12;
 	font-size: 18px;
+}
+.alert-title {
+  color: #31708f;
+    height: 3px;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+  width: 30%;
+  
 }
 .hovereffect {
   width: 100%;
@@ -6920,3 +6939,21 @@ hr.style15:after {
 
 .firstcol {
     border-right: 1px solid #000;
+}
+.bord{
+border:solid 2px black;
+background-color:grey;  
+}  
+
+/*image gallery*/
+.controls{
+    width:50px;
+    display:block;
+    font-size:11px;
+    padding-top:8px;
+    font-weight:bold;
+}
+.next {
+    float:right;
+    text-align:right;
+}
